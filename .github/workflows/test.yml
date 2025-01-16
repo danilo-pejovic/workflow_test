@@ -13,4 +13,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print Input
-        run: echo  ${{ github.event.inputs.param1 }}
+        run: echo  ${{ github.event.inputs.param1 }} & echo test2
