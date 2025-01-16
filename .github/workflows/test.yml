@@ -1,0 +1,16 @@
+name: Example Workflow
+
+on:
+  workflow_dispatch:
+    inputs:
+      param1:
+        description: "Parameter 1"
+        required: false
+        default: "default-value"
+
+jobs:
+  example_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Input
+        run: echo  ${{ github.event.inputs.param1 }}
